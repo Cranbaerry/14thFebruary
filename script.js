@@ -90,9 +90,9 @@ startbtn.addEventListener("click", () => {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-  const content = document.getElementById('content');
+window.onload = function() {
   const loader = document.getElementById('loader');
   loader.style.display = 'none';
+  const content = document.getElementById('content');
   content.style.visibility = 'visible';
-}, false);
+}
