@@ -86,7 +86,14 @@ const music = new Audio("music.mp3");
 music.loop = true;
 
 //Add an event listner to the start button
-startbtn.addEventListener("click", () => {
-  music.play().then(() => {
-  });
-});
+// startbtn.addEventListener("click", () => {
+//   music.play().then(() => {
+//   });
+// });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const content = document.getElementById('content');
+  const loader = document.getElementById('loader');
+  loader.style.display = 'none';
+  content.style.visibility = 'visible';
+}, false);
