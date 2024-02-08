@@ -80,3 +80,13 @@ papers.forEach(paper => {
   const p = new Paper();
   p.init(paper);
 });
+
+const startbtn = document.getElementById("startbtn");
+const music = new Audio("music.mp3");
+music.loop = true;
+
+//Add an event listner to the start button
+startbtn.addEventListener("click", () => {
+  music.play().then(() => {
+  });
+});
